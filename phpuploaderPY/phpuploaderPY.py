@@ -207,7 +207,7 @@ def mainThread():
                 if os.path.exists(path) and os.path.isdir(path):
                     # zip化
                     zipfolder.zipFolder(path, path + ".zip", ini.g_psw)
-                    print(path + ".zip")
+                    #print(path + ".zip")
                     # zipのmd5値取得
                     zipMD5 = md5.getFileMD5(path + ".zip")
                     # zip分割
@@ -330,7 +330,7 @@ def timer_task():
         root.after(1000, timer_task)  
         return
 
-    print("on timer")
+    #print("on timer")
 
     # 次回実行時間が未設定なら設定
     if next_exec_time is None:
@@ -342,7 +342,7 @@ def timer_task():
     from datetime import datetime
     now = datetime.now()
 
-    print("check")
+    #print("check")
 
     if now >= next_exec_time:
 

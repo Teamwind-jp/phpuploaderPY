@@ -7,13 +7,13 @@ def zipFolder(folder_path, zip_path, password):
         with pyzipper.AESZipFile(zip_path, 'w', compression=pyzipper.ZIP_DEFLATED) as zipf:
             if password.strip() != "":
                 zipf.setencryption(pyzipper.WZ_AES, nbits=256)
-                zipf.setpassword(password.encode('utf-8'))
+                zipf.setpassword(password.encode('sjis'))
             for root, _, files in os.walk(folder_path):
                 for file in files:
                     file_path = os.path.join(root, file)
                     arcname = os.path.relpath(file_path, folder_path)
                     zipf.write(file_path, arcname)
-                    print(file_path)
+                    #print(file_path)
 
 
 
