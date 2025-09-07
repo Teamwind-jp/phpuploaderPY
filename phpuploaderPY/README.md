@@ -1,6 +1,6 @@
 # phpuploaderPY
 
-![phpuploader](http://teamwind.serveblog.net/github/phpuploader/phpuploader.jpg)
+![phpuploader](http://teamwind.serveblog.net/github/phpuploader/001.jpg)
 
 本プロジェクトは、pythonによるサーバーサイドの保守ツールです。  
 指定フォルダをzip(password付)し指定サイズで分割後、他サーバーへアップロード(php)しバックアップしています。  
